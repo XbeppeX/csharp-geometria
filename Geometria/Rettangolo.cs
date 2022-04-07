@@ -43,28 +43,7 @@ namespace Geometria
 			Console.WriteLine("area: " + area + " cm2");
 		}
 
-		/*
-		 * public void StampaArea(int baseRettangolo1, int altezzaRettangolo1)
-        {
-			baseRettangolo = baseRettangolo1;
-			altezzaRettangolo = altezzaRettangolo1;
-			int area = baseRettangolo1 * altezzaRettangolo1;
-			Console.WriteLine("area: " + area + " cm");
-		}
-
 		
-
-		public int calcolaPerimetro(int baseRettangolo1, int altezzaRettangolo1)
-        {
-			baseRettangolo = baseRettangolo1;
-			altezzaRettangolo = altezzaRettangolo1;
-			int perimetro = (baseRettangolo1 + altezzaRettangolo1) * 2;
-			return perimetro;
-			
-        }
-		 *
-		 */
-
 
 
 
