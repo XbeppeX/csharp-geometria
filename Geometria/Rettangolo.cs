@@ -6,31 +6,24 @@ namespace Geometria
 		
 		private int baseRettangolo;
 		private int altezzaRettangolo;
-		private int perimetro;
-		private int area;
-
+		
 		public Rettangolo(int baseRettangolo1, int altezzaRettangolo1)
 		{
 			baseRettangolo = baseRettangolo1;
 			altezzaRettangolo = altezzaRettangolo1;
-			perimetro = calcolaPerimetro(baseRettangolo1, altezzaRettangolo1);
-			area = calcolaArea(baseRettangolo1, altezzaRettangolo1);
+		
 		}
 
-		public int calcolaPerimetro(int baseRettangolo1, int altezzaRettangolo1)
+		public int calcolaPerimetro()
 		{
-			baseRettangolo = baseRettangolo1;
-			altezzaRettangolo = altezzaRettangolo1;
-			int perimetro = (baseRettangolo1 + altezzaRettangolo1) * 2;
+			int perimetro = (baseRettangolo + altezzaRettangolo) * 2;
 			return perimetro;
 
 		}
 
-		public int calcolaArea(int baseRettangolo1, int altezzaRettangolo1)
+		public int calcolaArea()
 		{
-			baseRettangolo = baseRettangolo1;
-			altezzaRettangolo = altezzaRettangolo1;
-			int area = baseRettangolo1 * altezzaRettangolo1;
+			int area = baseRettangolo * altezzaRettangolo;
 			return area;
 		}
 
@@ -39,14 +32,52 @@ namespace Geometria
 			Console.WriteLine("---Rettangolo---");
 			Console.WriteLine("base: " + baseRettangolo + " cm");
 			Console.WriteLine("altezza: " + altezzaRettangolo + " cm");
-			Console.WriteLine("perimetro: " + perimetro + " cm");
-			Console.WriteLine("area: " + area + " cm2");
+			Console.WriteLine("perimetro: " + calcolaPerimetro() + " cm");
+			Console.WriteLine("area: " + calcolaPerimetro() + " cm2");
+		}
+
+		public void Disegno()
+        {
+			
+			Console.Write("|");
+
+			for (int i=0; i < baseRettangolo; i++)
+			{
+				Console.Write("--");
+
+			}
+
+			Console.WriteLine("|");
+
+			Console.Write("|");
+			for (int i=0; i < altezzaRettangolo-1; i++)
+			{
+
+				
+				Console.Write("a");
+				Console.Write("|");
+
+
+			}
+
+			Console.Write("|");
+
+			Console.WriteLine("");
+
+			Console.Write("|");
+
+			for (int i = 0; i < baseRettangolo; i++)
+			{
+				Console.Write("--");
+
+			}
+
+			Console.Write("|");
+
 		}
 
 		
-
-
-
+		
 
 
 	}

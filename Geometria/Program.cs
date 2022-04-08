@@ -4,7 +4,7 @@ using Geometria;
 
 while (true)
 {
-    Console.WriteLine("Dimmi se vuoi aggiungere rettango [Si/No]? ");
+    Console.WriteLine("Dimmi se vuoi aggiungere un rettango [Si/No]? ");
     string risposta = Console.ReadLine().ToLower();
 
     switch (risposta)
@@ -18,6 +18,7 @@ while (true)
             Rettangolo rettangolo1 = new Rettangolo(baseRettangolo, altezzaRettangolo);
 
             rettangolo1.StampaRettangolo();
+            rettangolo1.Disegno();
             Console.WriteLine("");
             break;
         case "no":
